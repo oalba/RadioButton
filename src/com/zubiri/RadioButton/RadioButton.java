@@ -40,6 +40,7 @@ public class RadioButton extends JFrame {
 	 * Create the frame.
 	 */
 	public RadioButton() {
+		super("RadioB");
 		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		setBounds(100, 100, 165, 161);
 		contentPane = new JPanel();
@@ -72,10 +73,13 @@ public class RadioButton extends JFrame {
 				System.out.println("Has seleccionado la opción: ");
 				if (rdbtnA.isSelected()) {
 		            System.out.println("A");
+		            setTitle("A");
 		        }else if (rdbtnB.isSelected()) {
 		        	System.out.println("B");
+		        	setTitle("B");
 		        }else if (rdbtnC.isSelected()) {
 		        	System.out.println("C");
+		        	setTitle("C");
 		        } 
 			}
 		});
